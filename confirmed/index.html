@@ -17,6 +17,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700&family=Jost:wght@400;500&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
+<style>
+.confirm .wrap {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center;
+  gap: 32px clamp(24px, 5vw, 80px);
+  min-height: min(780px, 88vh);
+  padding-block: 140px clamp(56px, 8vw, 110px);
+}
+.confirm-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; min-width: 0; }
+.confirm h1 { font-family: var(--head); font-weight: 700; color: var(--white); font-size: clamp(2.8rem, 7.4vw, 5.6rem); line-height: 0.98; letter-spacing: -0.03em; text-shadow: 0 2px 34px rgba(0, 0, 0, 0.45); }
+.confirm-copy p { font-size: 1.2rem; color: var(--white); max-width: 29em; text-shadow: 0 1px 18px rgba(0, 0, 0, 0.6); }
+.confirm-sign { display: flex; flex-direction: column; gap: 2px; padding-block: 2px 8px; color: var(--white); }
+.confirm-sign b { font-family: var(--mark); font-style: italic; font-weight: 400; font-size: 2.6rem; line-height: 1.1; }
+.confirm-sign span { color: var(--on-dark-soft); }
+.confirm .portrait { margin-bottom: 0; }
+@media (max-width: 900px) {
+  .confirm .wrap { grid-template-columns: minmax(0, 1fr); min-height: 0; padding-top: 120px; }
+  .confirm .portrait { order: -1; width: clamp(170px, 44vw, 240px); }
+}
+@media (max-width: 620px) {
+  .confirm .btn { width: 100%; }
+}
+</style>
 </head>
 <body>
 <div class="page">
