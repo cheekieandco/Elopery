@@ -19,21 +19,18 @@
 <link rel="stylesheet" href="../assets/site.css">
 <style>
 .confirm .wrap {
-  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center;
-  gap: 32px clamp(24px, 5vw, 80px);
-  min-height: min(780px, 88vh);
-  padding-block: 140px clamp(56px, 8vw, 110px);
+  display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; align-items: center;
+  min-height: min(680px, 80vh);
+  padding-block: 130px clamp(56px, 8vw, 100px);
 }
-.confirm-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; min-width: 0; }
+.confirm-copy { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; min-width: 0; }
 .confirm h1 { font-family: var(--head); font-weight: 700; color: var(--white); font-size: clamp(2.8rem, 7.4vw, 5.6rem); line-height: 0.98; letter-spacing: -0.03em; text-shadow: 0 2px 34px rgba(0, 0, 0, 0.45); }
 .confirm-copy p { font-size: 1.2rem; color: var(--white); max-width: 29em; text-shadow: 0 1px 18px rgba(0, 0, 0, 0.6); }
-.confirm-sign { display: flex; flex-direction: column; gap: 2px; padding-block: 2px 8px; color: var(--white); }
+.confirm-sign { display: flex; flex-direction: column; align-items: center; gap: 2px; padding-block: 2px 8px; color: var(--white); }
 .confirm-sign b { font-family: var(--mark); font-style: italic; font-weight: 400; font-size: 2.6rem; line-height: 1.1; }
 .confirm-sign span { color: var(--on-dark-soft); }
-.confirm .portrait { margin-bottom: 0; }
 @media (max-width: 900px) {
-  .confirm .wrap { grid-template-columns: minmax(0, 1fr); min-height: 0; padding-top: 120px; }
-  .confirm .portrait { order: -1; width: clamp(170px, 44vw, 240px); }
+  .confirm .wrap { min-height: 0; padding-top: 120px; }
 }
 @media (max-width: 620px) {
   .confirm .btn { width: 100%; }
@@ -58,10 +55,6 @@
         <div class="wrap">
           <div class="confirm-copy">
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
             <h1>We&rsquo;re official!</h1>
             <p>Thank you for signing up. Your spot on the list is confirmed, and I am so glad you are here.</p>
             <p>You will be the first to hear about our opening date, our packages and how to book. Until then, keep an eye on your inbox.</p>
@@ -71,10 +64,6 @@
             </div>
             <a class="btn btn--white" href="../">Back to The Elopery</a>
           </div>
-          <div class="portrait">
-            <img src="../img/portrait.jpg" alt="Macy Cheeks, founder of The Elopery">
-          </div>
-        </div>
       </section>
   </main>
 
